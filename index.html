@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superlist with Code Boxes and Images</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Code Boxes Section -->
+    <div class="code-section">
+      <div class="code-box" id="pythonBox" data-xpath="/html/body/div[1]/div[1]">
+        <h3>Python Code</h3>
+        <textarea id="pythonCode"># Lorem impulse for Python</textarea>
+      </div>
+
+      <div class="code-box" id="cBox" data-xpath="/html/body/div[1]/div[2]">
+        <h3>C Code</h3>
+        <textarea id="cCode">// Lorem impulse for C</textarea>
+      </div>
+
+      <div class="code-box" id="javaBox" data-xpath="/html/body/div[1]/div[3]">
+        <h3>Java Code</h3>
+        <textarea id="javaCode">// Lorem impulse for Java</textarea>
+      </div>
+    </div>
+
+    <!-- Task Manager Section -->
+    <div class="task-manager">
+      <h1>Superlist</h1>
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <input type="file" id="imageInput" accept="image/*" />
+      <button id="deselectImageButton">Deselect Image</button>
+      <span id="imageStatus">No image chosen.</span>
+      <button id="addTaskButton">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
